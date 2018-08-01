@@ -123,7 +123,7 @@ namespace Xunit.Runner.MSBuild
 
                 case "true":
                 case "required":
-                    appDomains = AppDomainSupport.Required;
+                    //appDomains = AppDomainSupport.Required;
                     break;
 
                 case "false":

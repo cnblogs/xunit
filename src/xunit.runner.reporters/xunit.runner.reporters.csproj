@@ -7,7 +7,7 @@
     <AssemblyName Condition=" '$(TargetFramework)' == 'netstandard2.0' ">xunit.runner.reporters.netstandard20</AssemblyName>
     <AssemblyName Condition=" '$(TargetFramework)' == 'netcoreapp1.0' ">xunit.runner.reporters.netcoreapp10</AssemblyName>
     <RootNamespace>Xunit.Runner.Reporters</RootNamespace>
-    <TargetFrameworks>net452;netstandard1.1;netstandard1.5;netstandard2.0;netcoreapp1.0</TargetFrameworks>
+    <TargetFrameworks>netstandard2.0</TargetFrameworks>
   </PropertyGroup>
 
   <ItemGroup>
@@ -33,6 +33,10 @@
 
   <ItemGroup Condition=" '$(TargetFramework)' == 'netstandard2.0' ">
     <EmbeddedResource Include="Resources\xunit.runner.reporters.netstandard20.rd.xml" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Update="SourceLink.Create.CommandLine" Version="2.8.3" />
   </ItemGroup>
 
 </Project>
